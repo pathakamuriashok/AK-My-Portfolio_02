@@ -392,7 +392,7 @@ body.dark-mode .contact-form button:hover {
   color: #27F5B7;
   text-align: center;
   padding: 15px 0;
-  border-radius: 6px;
+  border-radius: 16px;
   position: absolute;
   z-index: 1; /* Ensure tooltip is displayed above content */
 }
