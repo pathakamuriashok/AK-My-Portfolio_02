@@ -389,7 +389,9 @@ body.dark-mode .contact-form button:hover {
 /* Tooltip text */
 .tooltiptext {
   visibility: hidden; /* Hidden by default */
-  width: 130px;
+  opacity: 0;        /* Added */
+  /* width: 130px;    */
+  width: max-content;    /* Added */
   background-color: black;
   color: #27F5B7;
   text-align: center;
@@ -403,25 +405,3 @@ body.dark-mode .contact-form button:hover {
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
-
-/*
-
-Old Code
-
-.tooltiptext {
-  visibility: hidden; 
-  width: 130px;
-  background-color: black;
-  color: #27F5B7;
-  text-align: center;
-  padding: 5px 0;
-  border-radius: 6px;
-  position: absolute;
-  z-index: 1; 
-}
-
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-}
-*/
