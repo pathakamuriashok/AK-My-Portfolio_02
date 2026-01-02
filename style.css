@@ -376,6 +376,7 @@ body.dark-mode .contact-form button:hover {
 /* ================================
    Tooltip container
 ================================ */
+
 .tooltip {
   position: relative;
   display: inline-block;
@@ -389,16 +390,14 @@ body.dark-mode .contact-form button:hover {
 /* Tooltip text */
 .tooltiptext {
   visibility: hidden; /* Hidden by default */
-  opacity: 0;        /* Added */
-  /* width: 130px;    */
-  width: max-content;    /* Added */
+  width: 130px;
   background-color: black;
   color: #27F5B7;
   text-align: center;
   padding: 5px 0;
   border-radius: 6px;
   position: absolute;
-  z-index: 1; /* Ensure tooltip is displayed above content */
+  z-index: 9999; /* Ensure tooltip is displayed above content */
 }
 
 /* Show the tooltip text on hover */
