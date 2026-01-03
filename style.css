@@ -121,8 +121,12 @@ header {
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(56, 189, 248, 0.4);
+  background: linear-gradient(135deg, #38bdf8, #0f172a);
+  color: white;
 }
+
 
 /* ================================
    SKILLS SECTION
