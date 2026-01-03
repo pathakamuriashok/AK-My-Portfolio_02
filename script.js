@@ -33,51 +33,27 @@ themeToggle.addEventListener("click", () => {
 
 // Send Form 
 
-/*
 document.getElementById("contactForm").addEventListener("submit", function (e) {
   e.preventDefault();
-  document.getElementById("formMessage").innerText = "✅ Thank you! Your message has been sent.";
-  this.reset();
-});
-*/
 
-/*
-document.getElementById("contactForm").addEventListener("submit", function(e) {
-  e.preventDefault();
-
-  const params = {
-    name: document.getElementById("name").value,
-    email: document.getElementById("email").value,
-    title: document.getElementById("title").value
-  };
-
-  emailjs.send("service_n387ude", "template_rvaslef", params)
-    .then(function(response) {
-      document.getElementById("formMessage").innerText = "✅ Thank you! Your message has been sent.";
-      alert("Message sent successfully!");
-      document.getElementById("contactForm").reset();
-    }, function(error) {
-      alert("Failed to send message. Try again.");
-      document.getElementById("formMessage").innerText = "❌ SORRY ! Your message is NOT sent.";
-      console.error(error);
-    });
-});
-*/
-
-emailjs.send(
-  "service_n387ude",
-  "template_rvaslef",
-  {
-    name: document.getElementById("name").value,
-    email: document.getElementById("email").value,
-    title: "Contact Form Submission",
-    message: document.getElementById("message").value
-  }
-)
-.then(() => {
-    document.getElementById("formMessage").innerText = "✅ Thank you! Your message has been sent.";
-    alert("Message sent successfully!");
-})
-.catch((error) => {
-  console.error("EmailJS Error:", error);
+  emailjs.send(
+    "service_n387ude",
+    "template_rvaslef",
+    {
+      name: document.getElementById("name").value,
+      email: document.getElementById("email").value,
+      title: "Contact Form Submission",
+      message: document.getElementById("message").value
+    }
+  )
+  .then(() => {
+    document.getElementById("formMessage").innerText =
+      "✅ Thank you! Your message has been sent.";
+    this.reset();
+  })
+  .catch((error) => {
+    console.error("EmailJS Error:", error);
+    document.getElementById("formMessage").innerText =
+      "❌ Failed to send message. Please try again.";
+  });
 });
