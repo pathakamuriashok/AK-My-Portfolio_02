@@ -366,11 +366,14 @@ body.dark-mode .contact-form button:hover {
 }
 
 .Experience-card { 
+/*
   background-color: #e3f2fd;
-  border-left: 6px solid #1976d2;  /* blue accent */
-  border-right: 6px solid #1976d2;  /* blue accent */
-  border-top: 6px solid #1976d2;  /* blue accent */
-  border-bottom: 6px solid #1976d2;  /* blue accent */
+  border-left: 6px solid #1976d2;  
+  border-right: 6px solid #1976d2;  
+  border-top: 6px solid #1976d2;  
+  border-bottom: 6px solid #1976d2;  
+
+  */
   padding: 1.5rem;
   border-radius: 12px;
   box-shadow: 0 8px 18px rgba(56, 189, 248, 0.4);

@@ -3,15 +3,6 @@ function toggleMenu() {
   document.getElementById("navLinks").classList.toggle("show");
 }
 
-// Contact Form
-/*
-document.getElementById("contactForm").addEventListener("submit", function (e) {
-  e.preventDefault();
-  document.getElementById("formMessage").innerText = "✅ Thank you! Your message has been sent.";
-  this.reset();
-});
-
-*/
 // Fade-In Animation
 const fadeElements = document.querySelectorAll(".fade-in");
 const observer = new IntersectionObserver(
